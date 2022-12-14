@@ -1,0 +1,25 @@
+.e_section{
+    width: 100%;
+    min-height: 650px;
+    float: left;
+    background: linear-gradient(108.08deg, #076585 0.54%, #FFFFFF 100%);
+}
+.e_nav a{
+    color: gray;
+    
+}
+.e_left{
+    width: 100%;
+    min-height: 640px;
+    float: left;
+}
+.e_right{
+    width: 100%;
+    min-height: 640px;
+    float: left;
+}
+#elya{
+    float: left;
+    transition: 0.5s;
+}
+

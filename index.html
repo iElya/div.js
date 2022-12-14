@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="e_section">
+                <div class="col-lg-9 col-md-9">
+                    <div class="row">
+                        <div class="e_left">
+                            <div id="elya" onclick="eelya()"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3">
+                    <div class="row">
+                        <div class="e_right">
+                             
+                            <ul class="nav nav-tabs e_nav">
+                                <li class="active"><a data-toggle="tab" href="#shape">Shape</a></li>
+                                <li><a data-toggle="tab" href="#style">Style</a></li>
+                                <li><a data-toggle="tab" href="#text">Text</a></li>
+                            </ul>
+
+                            <br>
+                            
+                            
+                    
+                              
+                            <div class="tab-content">
+                                <div id="shape" class="tab-pane fade in active">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">Width</span>
+                                        <input id="width" type="text" class="form-control" name="width" placeholder="Enter width...">
+                                    </div>
+                                    <br>
+
+                                    <div class="input-group">
+                                        <span class="input-group-addon">Height</span>
+                                        <input id="height" type="text" class="form-control" name="height" placeholder="Enter height...">
+                                    </div>
+                                    <br>
+                                
+                                    <div class="form-group">
+                                        <label for="sel1">Select position</label>
+                                        <select class="form-control" id="position">
+                                          <option value="">Select</option>
+                                          <option value="static">Static</option>
+                                          <option value="relative">Relative</option>
+                                          <option value="absolute">Absolute</option>
+                                          <option value="fixed">Fixed</option>
+                                          <option value="sticky">Sticky</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="input-group">
+                                        <span class="input-group-addon">Left</span>
+                                        <input id="left" type="text" class="form-control" name="left" placeholder="Enter px...">
+                                    </div>
+                                    <br>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">Top</span>
+                                        <input id="top" type="text" class="form-control" name="top" placeholder="Enter px...">
+                                    </div>
+                                    <br>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">BorderRadius</span>
+                                        <input id="brr" type="text" class="form-control" name="brr" placeholder="Enter px or %...">
+                                    </div>
+                                    <br>
+
+
+                                
+                
+
+
+                                    <button type="button" class="btn" onclick="eelya()">Done</button>
+
+
+
+
+
+
+                                </div>
+                                <div id="style" class="tab-pane fade">
+
+                                    <div class="form-group">
+                                        <label for="sel1">Select Background Color</label>
+                                        <select class="form-control" id="bg">
+                                          <option value="">Select</option>
+                                          <option value="#12513a">Green 1</option>
+                                          <option value="#215e41">Green 2</option>
+                                          <option value="#417d55">Green 3</option>
+                                          <option value="#70ae75">Green 4</option>
+                                          <option value="#adec9c">Green 5</option>
+                                          
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="sel1">Select border</label>
+                                        <select class="form-control" id="border">
+                                          <option value="">Select</option>
+                                          <option value="dotted">Dotted</option>
+                                          <option value="dashed">Dashed</option>
+                                          <option value="solid">Solid</option>
+                                          <option value="double">Double</option>
+                                          <option value="groove">Groove</option>
+                                          <option value="ridge">Ridge</option>
+                                          <option value="inset">Inset</option>
+                                          <option value="outset">Outset</option>
+                                          <option value="none">None</option>
+                                          <option value="hidden">Hidden</option>
+                                          
+                                        </select>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">Border</span>
+                                        <input id="bc" type="text" class="form-control" name="bc" placeholder="Enter color...">
+                                    </div>
+                                    <br>
+                                    
+
+                                    <div class="input-group">
+                                        <span class="input-group-addon">BoxShadow</span>
+                                        <input id="bsh" type="text" class="form-control" name="bsh" placeholder="Enter value...">
+                                    </div>
+                                    <br>
+
+
+
+
+                                    <button type="button" class="btn" onclick="eelya()">Done</button>
+
+
+
+
+                                </div>
+                                <div id="text" class="tab-pane fade">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">Text</span>
+                                        <input id="txt" type="text" class="form-control" name="txt" placeholder="Enter text..">
+                                    </div>
+                                    <br>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">Font Size</span>
+                                        <input id="fs" type="text" class="form-control" name="fs" placeholder="Enter size..">
+                                    </div>
+                                    <br>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">Font Color</span>
+                                        <input id="fc" type="text" class="form-control" name="fc" placeholder="Enter color..">
+                                    </div>
+                                    <br>
+
+                                    <button type="button" class="btn" onclick="eelya()">Done</button>
+
+
+
+                                </div>
+                            </div>
+                        
+
+
+                            
+                           
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
